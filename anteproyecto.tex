@@ -58,11 +58,13 @@ Carlos A. \textsc{Iglesias}
 
 Cada vez un número mayor de aplicaciones proporcionan una forma de acceso a diferentes tipos de información, muchas veces publicada sin ningún tipo de coordinación entre los diferentes agentes. Para solventar este problema, surge la inciativa de Web Semántica, con la idea de dirigir la evolución de la Web, y permitir que los usuarios puedan encontrar, compartir, combinar y estudiar la información de una forma sencilla. A pesar de que el objetivo inicial -que cualquier persona pudiese publicar información especializada- no se ha cumplido completamente, en la actualidad gran cantidad de organizaciones publican grandes cantidades de información, a través de portales especialidados para ello.
 
-Dada la gran cantidad de información disponible, es deseable un sistema que permita interactuar con ella, indexarla, y realizar busquedas. Para la interacc
+La creciente de información disponible en la Web unida al cada vez mayor uso que los humanos hacemos de ella han propiciado la búsqueda de técnicas que permitan al software procesar de manera más eficiente dicha información, ser capaz de razonarla y combinarla por sí mismo, de forma que se mitiguen los problemas de sobrecarga de información y heterogeneidad de la misma en favor de una mayor interoperabilidad. Así pues, la Web Semántica promueve lenguajes universales que doten de significado a través de metadatos a la información disponible de forma que las máquinas puedan razonarla sin necesidad de un ser humano.
 
+Igualmente, se plantean sistemas que permitan almacenar dicha información, permitiendo trabajar sobre ella mediante leguanjes de consultas (tales como SPARQL), o realizar busquedas, ya sean por texto completo o mediante los diferentes atributos de cada elemento (por ejemplo, filtrando una lista de libros por autor).
 
+Finalmente, existen diferentes formas de que los usuarios finales interactuen con esta información. Desde catálogos completos con múltiples campos de busqueda, hasta agentes conversacionales, pasando por sistemas de pregunta-respuesta o demostradores gráficos, existe una gran cantidad de soluciones para facilitar al usuario final el acceso a la información deseada.
 
-Qué es la web semántica, indexación de la información y las formas de interactuar con los sistemas
+Por todo esto, y dadas las grandes posibilidades de la web semántica a la hora de analizar, consultar y presentar la información, consideramos conveniente diseñar un sistema que permita almacenar dicha información, actualizandose de forma constante y dinámica, y permitiendo a los usuarios finales interactuar con ella mediante lenguaje natural, sin necesidad de complicadas interfaces.
 
 \chapter*{Objetivos}
 ¿Qué vamos a hacer en el proyecto?
@@ -79,10 +81,26 @@ Qué es la web semántica, indexación de la información y las formas de intera
 
 \chapter*{Medios}
 
-java, eclipse, vim, servidores...
+El proyecto cuenta con los medios del Laboratorio de Investigación del Grupo de
+Sistemas Inteligentes del Departamento de Ingeniería de Sistemas Telemáticos (G.S.I.,
+D.I.T) de la E.T.S.I. Telecomunicación. Los recursos que se emplearán para el desarrollo
+del proyecto se detallan a continuación:
+\begin{itemize}
+  \item Hardware:
+  \begin{itemize}
+    \item PC para el desarrollo con conexión a Internet
+  \end{itemize}
+  \item Software
+  \begin{itemize}
+    \item Sistema operativo Debian Linux
+    \item Editores de texto kate y vim.
+    \item Entorno de desarrollo Eclipse y control de versiones con Git.
+    \item Servidores web (Apache) y de aplicaciones (Tomcat).
+  \end{itemize}
+\end{itemize}
 
 \nocite{*}
-l\bibliographystyle{ieeetr} 
+\bibliographystyle{ieeetr} 
 {
 \small
 \bibliography{bibtex/pfc_javi}
