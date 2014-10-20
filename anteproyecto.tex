@@ -59,24 +59,24 @@ Carlos A. \textsc{Iglesias}
 \setlength{\parskip}{8pt}
 \chapter*{Introducción}
 
-Cada vez un número mayor de aplicaciones proporcionan una forma de acceso a diferentes tipos de información, muchas veces publicada sin ningún tipo de coordinación entre los diferentes agentes. Para solventar este problema, surge la iniciativa de Web Semántica, con la idea de dirigir la evolución de la Web, y permitir que los usuarios puedan encontrar, compartir, combinar y estudiar la información de una forma sencilla. A pesar de que el objetivo inicial -que cualquier persona pudiese publicar información especializada- no se ha cumplido completamente, en la actualidad gran cantidad de organizaciones publican grandes cantidades de información, a través de portales especialidados para ello.
+Cada vez un número mayor de aplicaciones proporcionan una forma de acceso a diferentes tipos de información, muchas veces publicada sin ningún tipo de coordinación entre los diferentes agentes. Para solventar este problema, surge la iniciativa de Web Semántica, con la idea de dirigir la evolución de la Web y permitir que los usuarios puedan encontrar, compartir, combinar y estudiar la información de una forma sencilla. A pesar de que el objetivo inicial -que cualquier persona pudiese publicar información especializada- no se ha cumplido completamente, en la actualidad un elevado número de organizaciones publican grandes cantidades de información, a través de portales especialidados para ello.
 
 La creciente cantidad de información disponible en la Web unida al cada vez mayor uso que los humanos hacemos de ella han propiciado la búsqueda de técnicas que permitan al software procesar de manera más eficiente dicha información, ser capaz de razonarla y combinarla por sí mismo, de forma que se mitiguen los problemas de sobrecarga de información y heterogeneidad de la misma en favor de una mayor interoperabilidad. Así pues, la Web Semántica promueve lenguajes universales que doten de significado a través de metadatos a la información disponible de forma que las máquinas puedan razonarla sin necesidad de un ser humano.
 
-Igualmente, se plantean sistemas que permitan almacenar dicha información, permitiendo trabajar sobre ella mediante leguanjes de consultas (tales como SPARQL), o realizar busquedas, ya sean por texto completo o mediante los diferentes atributos de cada elemento (por ejemplo, filtrando una lista de libros por autor).
+Igualmente, se plantean sistemas que permitan almacenar dicha información, permitiendo trabajar sobre ella mediante leguanjes de consultas (tales como SPARQL), o realizar búsquedas, ya sean por texto completo o mediante los diferentes atributos de cada elemento (por ejemplo, filtrando una lista de libros por autor).
 
-Finalmente, existen diferentes formas de que los usuarios finales interactuen con esta información. Desde catálogos completos con múltiples campos de busqueda, hasta agentes conversacionales, pasando por sistemas de pregunta-respuesta o demostradores gráficos, existe una gran cantidad de soluciones para facilitar al usuario final el acceso a la información deseada.
+Finalmente, existen diferentes formas de que los usuarios finales interactúen con esta información. Desde catálogos completos con múltiples campos de búsqueda, hasta agentes conversacionales, pasando por sistemas de pregunta-respuesta o demostradores gráficos, existe una gran cantidad de soluciones para facilitar al usuario final el acceso a la información deseada.
 
 Por todo esto, y dadas las grandes posibilidades de la web semántica a la hora de analizar, consultar y presentar la información, consideramos conveniente diseñar un sistema que permita almacenar dicha información, actualizándose de forma constante y dinámica, y permitiendo a los usuarios finales interactuar con ella mediante lenguaje natural, sin necesidad de complicadas interfaces.
 
 \chapter*{Objetivos}
 
 El proyecto propuesto tendrá como objetivo el diseño e implementación de un sistema que permita el almacenamiento de información semántica, de forma que sea posible presentar y actualizar la información de forma sencilla y lo más automatizada posible.
-Para ello, se divirá el proyecto en los siguientes subojetivos:
+Para ello, se dividirá el proyecto en los siguientes subojetivos:
 
 \begin{enumerate}[i.]
-  \item Profundizar en los conocimientos necesarios de la Web Semántica, así como en las herramientas necesarias de consulta, busqueda y análisis.
-  \item Revisar el estado del arte de los sistemas de busqueda e indexación, especialmente de aquellos con busqueda facetada, sopesando las posibilidades que ofrecen, los estandares que soportan, y la forma de integrarlos en el proyecto.
+  \item Profundizar en los conocimientos necesarios de la Web Semántica, así como en las herramientas necesarias de consulta, búsqueda y análisis.
+  \item Revisar el estado del arte de los sistemas de búsqueda e indexación, especialmente de aquellos con búsqueda facetada, sopesando las posibilidades que ofrecen, los estándares que soportan y la forma de integrarlos en el proyecto.
   \item Diseñar e implementar la aplicación, así como la integración de los sistemas analizados en ella, haciendo especial énfasis en la extensibilidad, de forma que sea sencillo añadir nuevos sistemas en el futuro.
   \item Desplegar una demo de la aplicación, para que pueda ser probada por un grupo de usuarios no técnicos.
   \item Publicar la aplicación para su uso general, una vez solucionados los posibles problemas detectados en la fase anterior.
@@ -84,11 +84,11 @@ Para ello, se divirá el proyecto en los siguientes subojetivos:
 \end{enumerate}
 
 
-Se desarrollará una aplicación, basada en el bot del proyecto Calista, utilizando tecnologías web como HTML5 y javascript, y tecnologías de servidor como python y wsgi, nodejs, y servlets en java. Se pondrá especial enfasis en esta última parte, utilizando el framework proporcionado por Maia, que facilita la comunicación entre diferentes servicios, protegiendo frente a fallos o posibles caidas.
+Se desarrollará una aplicación, basada en el bot del proyecto Calista, utilizando tecnologías web como HTML5 y javascript, y tecnologías de servidor como python y wsgi, nodejs, y servlets en java. Se pondrá especial énfasis en esta última parte, utilizando el framework proporcionado por Maia, que facilita la comunicación entre diferentes servicios, protegiendo frente a fallos o posibles caídas.
 
-Además, se utilizará el motor de busqueda Apache Solr, del proyecto Apache Lucene, para almacenar la información y realizar busquedas o consultas sobre ella.
+Además, se utilizará el motor de búsqueda Apache Solr, del proyecto Apache Lucene, para almacenar la información y realizar búsquedas o consultas sobre ella.
 
-Finalmente, se estudiará la integración de Quepy como motor de busqueda de respuestas (QA por sus siglas en inglés), para el procesado de las preguntas de los usuarios.
+Finalmente, se estudiará la integración de Quepy como motor de búsqueda de respuestas (QA por sus siglas en inglés), para el procesado de las preguntas de los usuarios.
 
 \chapter*{Métodos y Fases del proyecto}
 
@@ -97,9 +97,9 @@ Para llevar a cabo los objetivos mencionados anteriormente, se proponen las sigu
   \item \textbf{Estudio del arte } ~\\
   Para poder abordar el proyecto, la primera tarea será profundizar en los conocimientos relativos a las tecnologías a utilizar, estudiando el funcionamiento y la razón de ser de la Web Semántica, sus estándares, modelos de representación, lenguajes de consulta, así como el de las herramientas a utilizar.
   \item \textbf{Fase de aprendizaje} ~\\
-  Una vez obtenida una idea de general de las herramientas que van a ser necesarias para el proyecto, será necesaria una etapa de práctica en la que familizarse con ellas, e instalar los entornos de desarrollo necesarios.
+  Una vez obtenida una idea general de las herramientas que van a ser necesarias para el proyecto, será necesaria una etapa de práctica en la que familiarizarse con ellas, e instalar los entornos de desarrollo necesarios.
   \item \textbf{Diseño de la solución} ~\\ 
-  En esta fase, se realizará un análisis de los casos de uso del sistema, con el objetivo de definir los requisitos tanto funcionales como no funcionales. Con esta información, se realizará un diseño arquitectónico del sistema, con el objetivo de definir detalladamente las interacciones entre los distintos componentes.
+  En esta fase, se realizará un análisis de los casos de uso del sistema, con el objetivo de definir los requisitos tanto funcionales como no funcionales. Con esta información se realizará un diseño arquitectónico del sistema, con el objetivo de definir detalladamente las interacciones entre los distintos componentes.
   \item \textbf{Implementación} ~\\
   Tras reunir toda la información pertinente, se llevará a cabo la implementación del sistema.
   \item \textbf{Pruebas y correción de fallos} ~\\
