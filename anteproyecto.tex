@@ -28,8 +28,8 @@
 \textsc{ \LARGE Anteproyecto fin de carrera}\\[1cm]
 
 \HRule \\[0.4cm]
-{ \LARGE \bfseries Desarrollo de un Asistente integrado}\\[0.2cm]
-{ \LARGE \bfseries con un Sistema de Indexación}\\[0.2cm]
+{ \LARGE \bfseries Desarrollo de un Asistente Personal}\\[0.2cm]
+{ \LARGE \bfseries integrado con un Sistema de Indexación}\\[0.2cm]
 { \LARGE \bfseries Semántica de Información}\\[0.4cm] 
 
 \HRule \\[4cm]
@@ -59,11 +59,11 @@ Carlos A. \textsc{Iglesias}
 \setlength{\parskip}{8pt}
 \chapter*{Introducción}
 
-Cada vez un número mayor de aplicaciones proporcionan una forma de acceso a diferentes tipos de información, muchas veces publicada sin ningún tipo de coordinación entre los diferentes agentes. Para solventar este problema, surge la iniciativa de Web Semántica, con la idea de dirigir la evolución de la Web y permitir que los usuarios puedan encontrar, compartir, combinar y estudiar la información de una forma sencilla. A pesar de que el objetivo inicial -que cualquier persona pudiese publicar información especializada- no se ha cumplido completamente, en la actualidad un elevado número de organizaciones publican grandes cantidades de información, a través de portales especialidados para ello.
+Cada vez un número mayor de aplicaciones proporcionan una forma de acceso a diferentes tipos de información, muchas veces publicada sin ningún tipo de coordinación entre los diferentes agentes. Para solventar este problema, surge la iniciativa de Web Semántica\cite{webs}, con la idea de dirigir la evolución de la Web y permitir que los usuarios puedan encontrar, compartir, combinar y estudiar la información de una forma sencilla. A pesar de que el objetivo inicial -que cualquier persona pudiese publicar información especializada- no se ha cumplido completamente, en la actualidad un elevado número de organizaciones publican grandes cantidades de información, a través de portales especialidados para ello.
 
-La creciente cantidad de información disponible en la Web unida al cada vez mayor uso que los humanos hacemos de ella han propiciado la búsqueda de técnicas que permitan al software procesar de manera más eficiente dicha información, ser capaz de razonarla y combinarla por sí mismo, de forma que se mitiguen los problemas de sobrecarga de información y heterogeneidad de la misma en favor de una mayor interoperabilidad. Así pues, la Web Semántica promueve lenguajes universales que doten de significado a través de metadatos a la información disponible de forma que las máquinas puedan razonarla sin necesidad de un ser humano.
+La creciente cantidad de información disponible en la Web unida al cada vez mayor uso que los humanos hacemos de ella han propiciado la búsqueda de técnicas que permitan al software procesar de manera más eficiente dicha información, ser capaz de razonarla y combinarla por sí mismo, de forma que se mitiguen los problemas de sobrecarga de información y heterogeneidad de la misma en favor de una mayor interoperabilidad. Así pues, la Web Semántica promueve lenguajes universales\cite{rdf} que doten de significado a través de metadatos a la información disponible de forma que las máquinas puedan razonarla sin necesidad de un ser humano.
 
-Igualmente, se plantean sistemas que permitan almacenar dicha información, permitiendo trabajar sobre ella mediante leguanjes de consultas (tales como SPARQL), o realizar búsquedas, ya sean por texto completo o mediante los diferentes atributos de cada elemento (por ejemplo, filtrando una lista de libros por autor).
+Igualmente, se plantean sistemas que almacenen dicha información, permitiendo trabajar sobre ella mediante leguanjes de consultas (tales como SPARQL), o realizar búsquedas, ya sean por texto completo o mediante los diferentes atributos de cada elemento (por ejemplo, filtrando una lista de libros por autor).
 
 Finalmente, existen diferentes formas de que los usuarios finales interactúen con esta información. Desde catálogos completos con múltiples campos de búsqueda, hasta agentes conversacionales, pasando por sistemas de pregunta-respuesta o demostradores gráficos, existe una gran cantidad de soluciones para facilitar al usuario final el acceso a la información deseada.
 
@@ -71,7 +71,7 @@ Por todo esto, y dadas las grandes posibilidades de la web semántica a la hora 
 
 \chapter*{Objetivos}
 
-El proyecto propuesto tendrá como objetivo el diseño e implementación de un sistema que permita el almacenamiento de información semántica, de forma que sea posible presentar y actualizar la información de forma sencilla y lo más automatizada posible.
+El proyecto propuesto tendrá como objetivo el diseño e implementación de un sistema que permita la captura de información semántica, esté o no publicada en un formato compatible, y el almacenamineto e indexación de dicha información, de forma que sea posible presentarla y actualizarla de forma sencilla y lo más automatizada posible. Adicionalmente, se implementará un Asistente Personal web que permita interacciones en lenguaje natural.
 Para ello, se dividirá el proyecto en los siguientes subojetivos:
 
 \begin{enumerate}[i.]
@@ -84,11 +84,11 @@ Para ello, se dividirá el proyecto en los siguientes subojetivos:
 \end{enumerate}
 
 
-Se desarrollará una aplicación, basada en el bot del proyecto Calista, utilizando tecnologías web como HTML5 y javascript, y tecnologías de servidor como python y wsgi, nodejs, y servlets en java. Se pondrá especial énfasis en esta última parte, utilizando el framework proporcionado por Maia, que facilita la comunicación entre diferentes servicios, protegiendo frente a fallos o posibles caídas.
+Se desarrollará una aplicación, basada en el bot del proyecto Calista\cite{jherrera14}, utilizando tecnologías web como HTML5 y javascript, y tecnologías de servidor como python y wsgi, nodejs, y servlets en java. Se pondrá especial énfasis en esta última parte, utilizando el framework proporcionado por Maia\cite{maia}, que facilita la comunicación entre diferentes servicios, protegiendo frente a fallos o posibles caídas.
 
-Además, se utilizará el motor de búsqueda Apache Solr, del proyecto Apache Lucene, para almacenar la información y realizar búsquedas o consultas sobre ella.
+Además, se utilizará el motor de búsqueda Apache Solr\cite{solr}, del proyecto Apache Lucene\cite{lucene}, para almacenar la información y realizar búsquedas o consultas sobre ella.
 
-Finalmente, se estudiará la integración de Quepy como motor de búsqueda de respuestas (QA por sus siglas en inglés), para el procesado de las preguntas de los usuarios.
+Finalmente, se estudiará la integración de Quepy\cite{quepy} como motor de búsqueda de respuestas (QA por sus siglas en inglés), para el procesado de las preguntas de los usuarios.
 
 \chapter*{Métodos y Fases del proyecto}
 
