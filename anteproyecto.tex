@@ -59,19 +59,19 @@ Carlos A. \textsc{Iglesias}
 \setlength{\parskip}{8pt}
 \chapter*{Introducción}\vspace{-1ex}
 
-Cada vez un número mayor de aplicaciones proporcionan una forma de acceso a diferentes tipos de información, muchas veces publicada sin ningún tipo de coordinación entre los diferentes agentes. Para solventar este problema, surge la iniciativa de Web Semántica\cite{webs}, con la idea de dirigir la evolución de la Web y permitir que los usuarios puedan encontrar, compartir, combinar y estudiar la información de una forma sencilla. A pesar de que el objetivo inicial -que cualquier persona pudiese publicar información especializada- no se ha cumplido completamente, en la actualidad un elevado número de organizaciones publican grandes cantidades de información, a través de portales especialidados para ello.
+Cada vez un número mayor de aplicaciones proporcionan una forma de acceso a diferentes tipos de información, muchas veces publicada sin ningún tipo de coordinación entre los diferentes agentes. Para solventar este problema, surge la iniciativa de Web Semántica\cite{webs}, con la idea de dirigir la evolución de la Web y permitir que los usuarios puedan encontrar, compartir, combinar y estudiar la información de una forma sencilla. A pesar de que el objetivo inicial -que cualquier persona pudiese publicar información especializada- no se ha cumplido completamente, en la actualidad un elevado número de organizaciones publican grandes cantidades de información, a través de portales especializados para ello.
 
 La creciente cantidad de información disponible en la Web unida al cada vez mayor uso que los humanos hacemos de ella han propiciado la búsqueda de técnicas que permitan al software procesar de manera más eficiente dicha información, ser capaz de razonarla y combinarla por sí mismo, de forma que se mitiguen los problemas de sobrecarga de información y heterogeneidad de la misma en favor de una mayor interoperabilidad. Así pues, la Web Semántica promueve lenguajes universales\cite{rdf} que doten de significado a través de metadatos a la información disponible de forma que las máquinas puedan razonarla sin necesidad de un ser humano.
 
-Igualmente, se plantean sistemas que almacenen dicha información, permitiendo trabajar sobre ella mediante leguanjes de consultas (tales como SPARQL), o realizar búsquedas, ya sean por texto completo o mediante los diferentes atributos de cada elemento (por ejemplo, filtrando una lista de libros por autor).
+Igualmente, se plantean sistemas que almacenen dicha información, permitiendo trabajar sobre ella mediante lenguajes de consultas (tales como SPARQL), o realizar búsquedas, ya sean por texto completo o mediante los diferentes atributos de cada elemento (por ejemplo, filtrando una lista de libros por autor).
 
-Finalmente, existen diferentes formas de que los usuarios finales interactúen con esta información. Desde catálogos completos con múltiples campos de búsqueda, hasta agentes conversacionales, pasando por sistemas de busqueda de respuestas (como Quepy\cite{quepy}) o demostradores gráficos, existe una gran cantidad de soluciones para facilitar al usuario final el acceso a la información deseada.
+Finalmente, existen diferentes formas de que los usuarios finales interactúen con esta información. Desde catálogos completos con múltiples campos de búsqueda, hasta agentes conversacionales, pasando por sistemas de búsqueda de respuestas (como Quepy\cite{quepy}) o demostradores gráficos, existe una gran cantidad de soluciones para facilitar al usuario final el acceso a la información deseada.
 
 Por todo esto, y dadas las grandes posibilidades de la web semántica a la hora de analizar, consultar y presentar la información, consideramos conveniente diseñar un sistema que permita almacenar dicha información, actualizándose de forma constante y dinámica, y permitiendo a los usuarios finales interactuar con ella mediante lenguaje natural, sin necesidad de complicadas interfaces.
 
 \chapter*{Objetivos}\vspace{-1ex}
 
-Partiendo del sistema desarrolado en un proyecto anterior para Calista\cite{jherrera13}, el proyecto propuesto tendrá como objetivo el diseño e implementación de un sistema que permita la captura de información semántica, esté o no publicada en un formato compatible, y el almacenamineto e indexación de dicha información, de forma que sea posible presentarla y actualizarla de forma sencilla y lo más automatizada posible. Adicionalmente, se implementará un Asistente Personal web que permita interacciones en lenguaje natural.
+Partiendo del sistema desarrollado en un proyecto anterior para Calista\cite{jherrera13}, el proyecto propuesto tendrá como objetivo el diseño e implementación de un sistema que permita la captura de información semántica, esté o no publicada en un formato compatible, y el almacenamiento e indexación de dicha información, de forma que sea posible presentarla y actualizarla de forma sencilla y lo más automatizada posible. Adicionalmente, se implementará un Asistente Personal web que permita interacciones en lenguaje natural.
 Para ello, se dividirá el proyecto en los siguientes subojetivos:
 
 \begin{enumerate}[i.]
@@ -101,7 +101,7 @@ Para llevar a cabo los objetivos mencionados anteriormente, se proponen las sigu
   En esta fase, se realizará un análisis de los casos de uso del sistema, con el objetivo de definir los requisitos tanto funcionales como no funcionales. Con esta información se realizará un diseño arquitectónico del sistema, con el objetivo de definir detalladamente las interacciones entre los distintos componentes.
   \item \textbf{Implementación} ~\\
   Tras reunir toda la información pertinente, se llevará a cabo la implementación del sistema.
-  \item \textbf{Pruebas y correción de fallos} ~\\
+  \item \textbf{Pruebas y corrección de fallos} ~\\
   Una vez realizada la primera implementación, se llevará a cabo un conjunto exhaustivo de pruebas, con el objetivo de detectar el mayor número posible de fallos y corregirlos.
   \item \textbf{Demostración } ~\\
   Finalmente, se aplicará el sistema desarrollado a un caso de uso práctico, y se pondrá disponible de forma pública.
